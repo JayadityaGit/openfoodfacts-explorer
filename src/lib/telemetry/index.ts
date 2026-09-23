@@ -6,5 +6,5 @@
 //
 // Initially taken from https://github.com/sinnwerkstatt/sveltekit-matomo
 
-export { default as Matomo } from './Matomo.svelte';
+export { default as Telemetry, default as Matomo } from './Telemetry.svelte';
 export * from './tracker';

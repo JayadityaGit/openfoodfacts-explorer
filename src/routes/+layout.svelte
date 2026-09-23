@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-	import { Matomo } from '$lib/matomo';
+	import { Telemetry } from '$lib/telemetry';
 
 	import '../app.css';
 	import 'leaflet/dist/leaflet.css';
@@ -237,7 +237,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
-<Matomo url={MATOMO_HOST} siteId={MATOMO_SITE_ID} />
+<Telemetry url={MATOMO_HOST} siteId={MATOMO_SITE_ID} />
 
 <Shortcuts {shortcuts} bind:this={shortcutsComp} />
 

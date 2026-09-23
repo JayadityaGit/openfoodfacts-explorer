@@ -12,7 +12,7 @@
  */
 
 import { get } from 'svelte/store';
-import { tracker } from '$lib/matomo';
+import { tracker } from '$lib/telemetry';
 
 /**
  * Track an Open Food Facts event via Matomo.
